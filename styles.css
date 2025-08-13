@@ -127,16 +127,21 @@ nav .links ul li:hover::after{
   position: absolute;
   right: 0;
   top: 10em;
-  padding-right: 15em;
-  border-top-left-radius: 49%;
-  border-bottom-left-radius: 49%;
+  padding-right: 11em;
+  border-top-left-radius: 30em;
+  border-bottom-left-radius:30em;
+  background-color: #013c58d0;
 }
 .image{
-  border: 1px solid white;
+  background-color: #013c58;
+  /* border: 1px solid white; */
+  height: 30em;
+  width: 30em;
   border-radius: 50%;
   padding: 1em;
   position: relative;
-  left: 2em;
+  left: 0em;
+
 
   
 
@@ -146,11 +151,12 @@ nav .links ul li:hover::after{
 background-image: url(image/oi.png);
 background-position: center;
 background-repeat: no-repeat;
-
-  width: 30em;
+background-position-y: top;
+  width: 29em;
   border-radius: 50%;
-  border: 1px solid white;
-  height: 30em;
+  /* border: 1px solid white; */
+  height: 29em;
+  background-color:#03699829 ;
 
 }
 /*.image {
