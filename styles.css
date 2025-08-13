@@ -1,8 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "lato", sans-serif;
   background-color: #a8e8f9;
   color: #333;
+  position: relative;
 }
 
 header {
@@ -115,10 +122,36 @@ nav .links ul li:hover::after{
   cursor: pointer;
   border-radius: 5px;
 }
-
-.image img {
-  width: 300px;
+.leftImagecontainer{
+  border: 2px solid ;
+  position: absolute;
+  right: 0;
+  top: 10em;
+  padding-right: 15em;
+  border-top-left-radius: 49%;
+  border-bottom-left-radius: 49%;
+}
+.image{
+  border: 1px solid white;
   border-radius: 50%;
+  padding: 1em;
+  position: relative;
+  left: 2em;
+
+  
+
+}
+
+.image .img {
+background-image: url(image/oi.png);
+background-position: center;
+background-repeat: no-repeat;
+
+  width: 30em;
+  border-radius: 50%;
+  border: 1px solid white;
+  height: 30em;
+
 }
 /*.image {
   width: 100%;
@@ -188,3 +221,5 @@ footer {
     margin-top: 1em;
   }
 }
+
+
