@@ -7,46 +7,44 @@
       font-family: 'Helvetica Neue', sans-serif;
       background: #191649;
       color: #77a0ec;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
 
     .container {
-      
-      margin: auto;
-      padding: 2em;
+      width: 100%;
       display: flex;
+      flex-direction: column;
 
     }
 
     .grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
       display: flex;
-      padding: 1em;
-      /* flex-direction: column; */
-    }
-
-    .card {
-      background: #83bbef;
-      border-radius: 12px;
-      /*overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;*/
+      width: 100%;
+      flex-wrap: wrap;
       justify-content: center;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      flex-direction: column;
-      height: 200px;
-
+      gap: 1em; 
     }
+    
 
   
 
-    .card img {
-      height: 100%;
-      object-fit: cover;
+     img {
+      width: 30%;
+      height: auto;
+      /* object-fit: cover; */
 
+    }
+    .team-photo{
+      border:2px solid ;
+      background-image: url('IMG-20250814-WA0021.jpg');
+      background-size: cover;
+      background-position: center;
+      width: 10vh;
+      height: 100%;
     }
 
     @media (max-width: 600px) {

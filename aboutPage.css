@@ -14,41 +14,94 @@ body {
 }
 
 header {
-    background-color: #00537A;
-    padding: 15px 20px;
-}
-
-.nav-container {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #013c58;
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .logo img {
-    height: 30px;
-    border-radius: 10px;
+  height: 50px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
+/*nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
-    text-decoration: none;
-    color: rgb(251, 248, 248);
-    font-weight: 500;
-}
-
-.nav-buttons {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}*/
+nav{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    padding: 10px 5px;
 }
 
-.btn-primary {
+nav .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+nav.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    
+
+}
+
+nav .links ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+}
+
+nav .links ul li a{
+  text-decoration: none;
+    font-size: 1em;
+    font-family: "lato", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    padding: 10px 3px;
+    position: relative;
+    color: #fff;
+}
+
+nav .links ul li::after{
+    content: '';
+    position: absolute;
+    background-color:none; 
+    padding: 1px;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+nav .links ul li:hover::after{
+    width: 100%;
+    background-color: hsl(252, 42%, 95%);
+}
+
+/*.btn-primary {
     background-color: #013C58;
     color: white;
     padding: 8px 14px;
@@ -62,7 +115,7 @@ nav a {
     padding: 8px 14px;
     border-radius: 4px;
     text-decoration: none;
-}
+}*/
 
 
 .hero {
